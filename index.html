@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-page">
+        <div class="sub-page">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-name">ARJUN UDDISA</div>
+                </div>
+                <nav >
+                    <div class="togglebutton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="profile-pic">
+                    <img src="pics/project profile.jpg" alt="profile-pic">
+                </div>
+                <div class="profile-text">
+                    <h5>Hi I'm <span class="">Frontend Developer</span></h5>
+                    <h1>Arjun Uddisa</h1>
+                    <p>Frontend Developer Portfolio
+                        As a passionate frontend developer, I specialize in building user-friendly, responsive web applications with a focus on clean, modern design and seamless user experiences. Proficient in HTML, CSS, JavaScript, and frameworks like React, I develop interactive and scalable interfaces. My portfolio highlights projects demonstrating expertise in UI/UX design, performance optimization, and cross-browser compatibility. I thrive on turning complex problems into intuitive solutions, using innovative techniques to create impactful web applications.
+                    </p>
+                    <div class="button-grp">
+                        <a href="#" class="button">Download Resume</a>
+                        <a href="#" class="button">Contact</a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click **/
+        var togglebutton=document.querySelector(".togglebutton");
+        var nav=document.querySelector(".nav-menu");
+        var links=document.querySelector(".nav-menu li");
+
+        togglebutton.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        
+     </script>
+</body>
+</html>
